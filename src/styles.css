@@ -417,8 +417,8 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 .form-group input:focus { outline: none; border-color: var(--green-main); background: white; }
 .form-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px 10px;
+  grid-template-columns: 1fr;
+  gap: 6px;
 }
 .form-grid .form-group { margin-bottom: 0; }
 .form-actions {
