@@ -66,36 +66,3 @@ const DIET = {
   ],
 };
 
-// Datos iniciales de evolución (de las consultas con la nutrióloga)
-const EVOLUCIONES_INICIALES = [
-  {
-    id: 1,
-    fecha: '19 de abril 2026',
-    label: 'Consulta más reciente',
-    datos: {
-      peso: { val: '74.3 kg', diff: '+0.2', dir: 'neu' },
-      grasa: { val: '18.5%', diff: '-1.4%', dir: 'up' },
-      musculo: { val: '40.0%', diff: '+2.2%', dir: 'up' },
-      edadMeta: { val: '30 años', diff: '-6', dir: 'up' },
-      cintura: { val: '84 cm', diff: '+4 cm', dir: 'down' },
-      brazo: { val: '29 cm', diff: '+1 cm', dir: 'up' },
-      pierna: { val: '53 cm', diff: '+2 cm', dir: 'up' },
-      grasaVisc: { val: '2', diff: '-1', dir: 'up' },
-    },
-  },
-  {
-    id: 0,
-    fecha: '9 de abril 2026',
-    label: 'Consulta inicial',
-    datos: {
-      peso: { val: '74.1 kg', diff: '', dir: 'neu' },
-      grasa: { val: '19.9%', diff: '', dir: 'neu' },
-      musculo: { val: '37.8%', diff: '', dir: 'neu' },
-      edadMeta: { val: '36 años', diff: '', dir: 'neu' },
-      cintura: { val: '80 cm', diff: '', dir: 'neu' },
-      brazo: { val: '28 cm', diff: '', dir: 'neu' },
-      pierna: { val: '51 cm', diff: '', dir: 'neu' },
-      grasaVisc: { val: '3', diff: '', dir: 'neu' },
-    },
-  },
-];
