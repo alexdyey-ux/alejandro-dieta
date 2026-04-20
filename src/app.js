@@ -85,7 +85,7 @@ function renderChecklist() {
   const pct   = Math.round((done / 5) * 100);
 
   return `
-    <div class="view active" id="view-checklist">
+    <div class="view ${activeTab === 'checklist' ? 'active' : ''}" id="view-checklist">
       <div class="day-nav">
         <div>
           <div class="day-name">${DAYS_ES[dow]}</div>
