@@ -52,8 +52,13 @@ function saveDiet()      { try { localStorage.setItem(KEYS.diet,       JSON.stri
 
 // ——— HELPERS ———
 function getDate(off = 0) { const d = new Date(); d.setDate(d.getDate() + off); return d; }
-function dateKey(d)       { return d.toISOString().split('T')[0]; }
-function todayKey()       { return dateKey(new Date()); }
+function dateKey(d) {
+  const y  = d.getFullYear();
+  const m  = String(d.getMonth() + 1).padStart(2, '0');
+  const dy = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${dy}`;
+}
+function todayKey() { return dateKey(new Date()); }
 
 function getEffectiveDiet() {
   const out = {};
